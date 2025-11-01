@@ -1,0 +1,7 @@
+{
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": false,
+    "prettier.htmlWhitespaceSensitivity": "ignore",
+    "editor.experimentalWhitespaceRendering": "off",
+    "editor.renderWhitespace": "none"
+}

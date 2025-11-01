@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <script>
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        });
+    </script>
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 5rem;
+      "
+    >
+      <div
+        class="contact_us"
+        style="
+          display: flex;
+          justify-content: left;
+          align-items: flex-start;
+          padding: 20px;
+          flex-direction: column;
+        "
+      >
+        <h1>Contact Us</h1>
+        <h2>Visit Us at :</h2>
+        <h3>
+          Times Finland
+          <br />
+          Karaportti 2
+          <br />
+          02700 Espoo
+          <br />
+          Finland
+          <br />
+          Email:
+          <a href="" style="display: flex; justify-self: flex-start">
+            timesfinland@metropolia.fi
+          </a>
+          <br />
+          Phone number: +358 (0) 41123456789
+        </h3>
+      </div>
+
+      <img
+        class="map"
+        src="map.png"
+        alt="map"
+        style="border-radius: 20px; object-fit: cover; width: 20%"
+      />
+    </div>
+  </body>
+</html>

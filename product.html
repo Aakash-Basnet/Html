@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product- Times_Finland</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <script>
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        });
+    </script>
+    <div
+      class="product_page"
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        border-width: 5rem;
+        border-color: white;
+      "
+    >
+      <img
+        src="banner2.jpg"
+        alt="a banner"
+        style="
+          width: 90%;
+          height: 300px;
+          object-fit: cover;
+
+          border-radius: 20px;
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+          margin-bottom: 30px;
+          /* transition: transform 0.3s ease; */
+        "
+        ;
+      />
+      <h1
+        style="
+          font-style: inherit;
+          color: black;
+          margin-bottom: 20px;
+          text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        "
+      >
+        "Subscribe Today, Read Beyond Tomorrow"
+      </h1>
+      <p style="width: 90%; text-shadow: none; font-weight: bold">
+        Discover a world of reliable news and insightful stories with Times
+        Finland. From in-depth investigative reports to daily updates on
+        business, technology, and culture, our products are designed to keep you
+        informed and connected. Choose from digital subscriptions, ePaper
+        editions, and premium newsletters—crafted for readers who value
+        accuracy, clarity, and convenience.
+      </p>
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: stretch;
+          margin-top: 5rem;
+          width: 90%;
+          height: 60%;
+          gap: 60px;
+          padding-bottom: 20rem;
+        "
+      >
+        <div class="card">
+          <h2>Subscription</h2>
+          <img
+            src="p1alt.png"
+            alt="subscriptions plan"
+            style="
+              width: 70%;
+              display: block;
+              border-radius: 10px;
+
+              height: 700px;
+            "
+          />
+          <p>
+            Times Finland subscription gives you full access to all news,
+            exclusive stories, and ePaper editions. Enjoy timely updates,
+            in-depth analysis, and premium content delivered straight to you.
+            Stay informed, stay ahead.
+          </p>
+        </div>
+        <div class="card">
+          <h2>Advertisement</h2>
+          <img
+            src="p2.png"
+            alt="image advertise with us"
+            style="
+              width: 70%;
+              display: block;
+              border-radius: 10px;
+              height: 700px;
+            "
+          />
+          <p>
+            Times Finland offers premium advertising and sponsored content
+            opportunities. Reach your audience through targeted online banners,
+            native articles, and print placements. Promote your brand
+            effectively while engaging readers with relevant and high-quality
+            content.
+          </p>
+        </div>
+        <div class="card">
+          <h2>Mobile App</h2>
+          <img
+            src="p3.png"
+            alt=" image of stay informed anytime "
+            style="
+              width: 70%;
+              display: block;
+              border-radius: 10px;
+              height: 700px;
+            "
+          />
+          <p>
+            The Times Finland mobile app keeps the news in your pocket. Access
+            breaking stories, exclusive content, and the ePaper anytime,
+            anywhere. Stay updated on the go with push notifications and a
+            seamless reading experience.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
