@@ -3,18 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore Times Finland products – high-quality, reliable, and designed to meet your needs. Discover our latest offerings today."
+    />
+
     <title>Product- Times_Finland</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preload" href="logo.webp" as="image" />
+    <link rel="preload" href="banners.webp" as="image " fetchpriority="high" />
+    <link rel="preload" href="p1alt.webp" as="image" />
+    <link rel="preload" href="p2.webp" as="image" />
+    <link rel="preload" href="p3.webp" as="image" />
   </head>
   <body>
-    <div id="navbar"></div>
-    <script>
-      fetch("navbar.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("navbar").innerHTML = data;
-        });
-    </script>
+    <div class="container" style="padding: 10px">
+      <nav
+        class="topbar"
+        style="
+          display: flex;
+          background-color: rgb(255, 255, 255);
+          padding: 10px 20px;
+          justify-content: space-between;
+          align-items: center;
+          border-radius: 10px;
+          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        "
+      >
+        <img
+          src="logo.webp"
+          alt="Company Logo with letter T and F"
+          style="
+            resize: inline;
+            justify-content: left;
+            height: 100px;
+            width: auto;
+            border-color: blue;
+            border-style: groove;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+              rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+              rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+          "
+        />
+        <ul
+          style="
+            display: flex;
+            list-style: none;
+            margin: 0;
+            gap: 120px;
+
+            padding: 20px;
+          "
+        >
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="product.html">Products</a>
+          </li>
+          <li>
+            <a href="contact.html">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div
       class="product_page"
       style="
@@ -28,7 +81,7 @@
       "
     >
       <img
-        src="banner2.jpg"
+        src="banners.webp"
         alt="a banner"
         style="
           width: 90%;
@@ -75,7 +128,7 @@
         <div class="card">
           <h2>Subscription</h2>
           <img
-            src="p1alt.png"
+            src="p1alt.webp"
             alt="subscriptions plan"
             style="
               width: 70%;
@@ -95,7 +148,7 @@
         <div class="card">
           <h2>Advertisement</h2>
           <img
-            src="p2.png"
+            src="p2.webp"
             alt="image advertise with us"
             style="
               width: 70%;
@@ -115,7 +168,7 @@
         <div class="card">
           <h2>Mobile App</h2>
           <img
-            src="p3.png"
+            src="p3.webp"
             alt=" image of stay informed anytime "
             style="
               width: 70%;

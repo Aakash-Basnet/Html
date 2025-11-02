@@ -3,18 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get in touch with Times Finland contact us for inquiries, support, or feedback. We’re here to help."
+    />
+
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preload" href="map.webp" as="image" />
   </head>
   <body>
-    <div id="navbar"></div>
-    <script>
-      fetch("navbar.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("navbar").innerHTML = data;
-        });
-    </script>
+    <div class="container" style="padding: 10px">
+      <nav
+        class="topbar"
+        style="
+          display: flex;
+          background-color: rgb(255, 255, 255);
+          padding: 10px 20px;
+          justify-content: space-between;
+          align-items: center;
+          border-radius: 10px;
+          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        "
+      >
+        <img
+          src="logo.webp"
+          alt="Company Logo with letter T and F"
+          style="
+            resize: inline;
+            justify-content: left;
+            height: 100px;
+            width: auto;
+            border-color: blue;
+            border-style: groove;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+              rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+              rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+          "
+        />
+        <ul
+          style="
+            display: flex;
+            list-style: none;
+            margin: 0;
+            gap: 120px;
+
+            padding: 20px;
+          "
+        >
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="product.html">Products</a>
+          </li>
+          <li>
+            <a href="contact.html">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div
       style="
         display: flex;
@@ -55,7 +104,7 @@
 
       <img
         class="map"
-        src="map.png"
+        src="map.webp"
         alt="map"
         style="border-radius: 20px; object-fit: cover; width: 20%"
       />

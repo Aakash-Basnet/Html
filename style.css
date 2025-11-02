@@ -8,7 +8,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   /* filter: brightness(120%); */
   /*text-align: center;*/
   /* padding-top: 50px; */
